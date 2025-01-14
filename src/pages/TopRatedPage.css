@@ -1,0 +1,47 @@
+/* TopRatedPage.css */
+.top-rated-page {
+    padding: 20px 0; /* Removed side padding */
+    background: linear-gradient(to bottom, #1a1a1a, #101010); /* Gradient background */
+    color: #eaeaea;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Prevents overflow outside the container */
+    width: 100%; /* Ensures full width */
+  }
+  
+  /* Title styling */
+  .top-rated-page h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.7); /* Subtle glow effect */
+  }
+  
+  /* Movie grid styling */
+  .movie-grid {
+    width: 100%;
+    max-width: 1200px; /* Limit the container width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0; /* Remove extra padding */
+    display: flex;
+    gap: 20px; /* Add spacing between items */
+    justify-content: space-between; /* Distribute items evenly */
+    flex-wrap: wrap; /* Ensure responsiveness by wrapping items */
+    box-sizing: border-box; /* Prevent padding from affecting layout width */
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 768px) {
+    .top-rated-page h2 {
+      font-size: 2rem;
+    }
+  
+    .movie-grid {
+      gap: 15px; /* Adjust gap for smaller screens */
+    }
+  }
+  

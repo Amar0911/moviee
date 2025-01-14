@@ -1,0 +1,100 @@
+/* Main movie details container */
+.movie-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  background: linear-gradient(to bottom, #121212, #1a1a1a); /* Dark background gradient */
+  color: #eaeaea;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Added a stronger shadow for depth */
+  position: relative;
+  overflow: hidden; /* Prevent any overflow */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+/* Image styling */
+.movie-details img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); /* Stronger image shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.movie-details img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Title styling */
+.movie-details h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.7); /* Add a subtle glow effect */
+}
+
+/* Text paragraphs styling */
+.movie-details p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #eaeaea;
+  margin-bottom: 15px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.movie-details p:hover {
+  color: #ffcc00; /* Highlight text on hover */
+}
+
+/* Highlighted text (Release date, Rating) */
+.movie-details p span {
+  font-weight: bold;
+  color: #ff007f; /* Accent color */
+}
+
+/* Overview section */
+.movie-details .overview {
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  font-style: italic; /* Make overview text stand out with italics */
+  margin-bottom: 20px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .movie-details {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .movie-details img {
+    max-width: 300px; /* Adjust image size for smaller screens */
+  }
+
+  .movie-details h2 {
+    font-size: 2rem; /* Smaller title font */
+  }
+
+  .movie-details p {
+    font-size: 1rem; /* Adjust paragraph size for mobile */
+  }
+}
+
+/* Add background color and accent for the overall page */
+.movie-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better text contrast */
+  z-index: -1; /* Ensure the background overlay stays behind the content */
+}

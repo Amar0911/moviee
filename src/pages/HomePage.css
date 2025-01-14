@@ -1,0 +1,31 @@
+.homepage {
+  padding: 20px 0; 
+  background: linear-gradient(to bottom, #1a1a1a, #101010);
+  color: #eaeaea;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.homepage-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #ff007f; 
+  text-shadow: 2px 2px 10px rgba(255, 0, 127, 0.8);
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+.display-flex {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  flex-wrap: wrap;
+  box-sizing: border-box; 
+}
